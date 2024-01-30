@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapitest"
+version = "0.1.0"
+description = "basic fast api"
+authors = ["Kartik Behl <behlkartik20@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+fastapi = "^0.108.0"
+pydantic = "^2.5.3"
+sqlalchemy = "^2.0.25"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+psycopg2-binary = "^2.9.9"
+pymysql = "^1.1.0"
+alembic = "^1.13.1"
+requests = "^2.31.0"
+aiohttp = "^3.9.1"
+aiofiles = "^23.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
